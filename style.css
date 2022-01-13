@@ -5,12 +5,14 @@ body {
 h1 {
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 70px;
+  font-size: 6vw;
   font-weight: 400;
   display: inline-block;
   margin-left: 10%;
-  margin-right: 24px;
   vertical-align: top;
+  border-bottom: 4px solid #23272a;
+  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
 p {
@@ -32,8 +34,8 @@ img {
   border-color: #23272a;
   border-radius: 50%;
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 12vw;
+  height: 12vw;
   margin-top: 16px;
   margin-left: 16px;
   margin-bottom: 16px;
