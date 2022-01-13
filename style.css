@@ -1,12 +1,12 @@
 body {
-  background-color: #161b22;
+  background-color: #030d1b;
 }
 
 h1 {
   color: white;
   margin-left: 20px;
-  font-family: Monaco;
-  font-size: 24px;
+  font-family: 'VT323', monospace;
+  font-size: 48px;
 }
 
 p {
