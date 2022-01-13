@@ -5,4 +5,10 @@ body {
 h1 {
   color: white;
   margin-left: 20px;
+  font-family: "Monaco";
+}
+
+p {
+  color: white;
+  font-family: "Consolas";
 }
