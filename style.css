@@ -1,16 +1,45 @@
 body {
-  background-color: #030d1b;
+  background-color: #23272a;
 }
 
 h1 {
   color: white;
-  margin-left: 20px;
-  font-family: 'VT323', monospace;
-  font-size: 48px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  display: inline-block;
+  margin-left:10%;
 }
 
 p {
   color: white;
-  font-family: Consolas;
-  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-left: 5%;
+}
+
+ul {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-left: 5%;
+}
+
+img {
+  border: 8px solid;
+  border-color: #23272a;
+  border-radius: 50%;
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  vertical-align: -46px;
+  margin-left: 20px;
+}
+
+.top-menu {
+  width: auto;
+  height: auto;
+  background-color: #2C2F33;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(255,239,0,1) 0%, rgba(255,100,0,1) 30%, rgba(255,0,0,1) 100%);
 }
