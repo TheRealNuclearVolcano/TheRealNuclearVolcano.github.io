@@ -10,9 +10,16 @@ h1 {
   display: inline-block;
   margin-left: 10%;
   vertical-align: top;
-  border-bottom: 4px solid #23272a;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  border-bottom: 0.4vw solid;
+  border-color: #FF1493;
+  animation: borderColor 20s infinite;
+  text-align: right;
+}
+
+span {
+  color : #FF1493;
+  font-weight: 600;
+  animation: textColor 20s infinite
 }
 
 p {
@@ -30,16 +37,16 @@ ul {
 }
 
 img {
-  border: 8px solid;
-  border-color: #23272a;
+  border: 0.4vw solid;
+  border-color: #FF1493;
   border-radius: 50%;
-  animation: rainbow 5s infinite;
   display: inline-block;
   width: 12vw;
   height: 12vw;
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  animation: borderColor 20s infinite;
 }
 
 .top-menu {
@@ -50,8 +57,56 @@ img {
   border-radius: 12px;
 }
 
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+@keyframes borderColor {
+  12.5% {
+    border-color: #FF0000;
+  }
+  25% {
+    border-color: #FFA500;
+  }
+  37.5% {
+    border-color: #FFFF00;
+  }
+  50% {
+    border-color: #7FFF00;
+  }
+  62.5% {
+    border-color: #00FFFF;
+  }
+  75% {
+    border-color: #0000FF;
+  }
+  87.5% {
+    border-color: #9932CC;
+  }
+  100% {
+    border-color: #FF1493;
+  }
+}
+
+@keyframes textColor {
+  12.5% {
+    color: #FF0000;
+  }
+  25% {
+    color: #FFA500;
+  }
+  37.5% {
+    color: #FFFF00;
+  }
+  50% {
+    color: #7FFF00;
+  }
+  62.5% {
+    color: #00FFFF;
+  }
+  75% {
+    color: #0000FF;
+  }
+  87.5% {
+    color: #9932CC;
+  }
+  100% {
+    color: #FF1493;
+  }
 }
