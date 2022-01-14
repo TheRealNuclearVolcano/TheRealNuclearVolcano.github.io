@@ -33,6 +33,7 @@ img {
   border: 8px solid;
   border-color: #23272a;
   border-radius: 50%;
+  animation: rainbow 5s infinite;
   display: inline-block;
   width: 12vw;
   height: 12vw;
@@ -47,4 +48,10 @@ img {
   background-color: #2C2F33;
   z-index: -1;
   border-radius: 12px;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
