@@ -1,3 +1,7 @@
+:root {
+--margin: 20vw;
+}
+
 body {
   background-color: #23272a;
 }
@@ -16,10 +20,47 @@ h1 {
   text-align: right;
 }
 
+h2 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 4vw;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+h3 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  border-bottom: 0.6vw solid;
+  border-color: #FF1493;
+  animation: borderColor 20s infinite;
+  margin-left: 2vw;
+}
+
 span {
   color : #FF1493;
   font-weight: 600;
   animation: textColor 20s infinite
+}
+
+a {
+  color : #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  animation: borderColor 20s infinite;
+  text-decoration: none;
+  border: 0.4vw solid #FF1493;
+  padding: 0.4vw;
+  margin-left: var(--margin);
+  background-color: #2C2F33;
 }
 
 p {
@@ -27,6 +68,14 @@ p {
   font-family: 'Raleway', sans-serif;
   font-size: 2vw;
   margin-left: 5%;
+  margin-right: 5%;
+}
+
+hr {
+  border-top: 0.4vw solid;
+  border-bottom: 0;
+  border-color: #FF1493;
+  animation: borderColor 20s infinite;
 }
 
 ul {
@@ -55,6 +104,17 @@ img {
   background-color: #2C2F33;
   z-index: -1;
   border-radius: 12px;
+}
+
+.project-block {
+  vertical-align:top;
+  width: 40vw;
+  height: auto;
+  background-color: #2C2F33;
+  z-index: -1;
+  border-radius: 12px;
+  margin: 4vw;
+  display: inline-block;
 }
 
 @keyframes borderColor {
