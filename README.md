@@ -1,3 +1,3 @@
 # TheRealNuclearVolcano.github.io
 
-A WebSite I'm working on to improve my HTML, CSS skills
+A Website I'm working on to improve my HTML, CSS skills
