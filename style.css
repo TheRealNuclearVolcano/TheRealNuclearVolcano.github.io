@@ -29,7 +29,7 @@ h2 {
 h3 {
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: calc(0.75em + 2.5vmin);
+  font-size: calc(0.75em + 3vmin);
   font-weight: 400;
   display: inline-block;
   vertical-align: top;
@@ -104,12 +104,13 @@ img {
 }
 
 .project-block {
-  width: auto;
+  width: calc(0.75em + 80vmin);
   height: auto;
   background-color: #2C2F33;
   z-index: -1;
   border-radius: 12px;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: 16px;
 }
 
