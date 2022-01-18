@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap');
+
+:root {
+  --orange: #FF6200;
+  --dark: #23272A;
+  --light: #2C2F33
+}
+
 body {
   background-color: #23272a;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 
 h1 {
@@ -11,8 +27,8 @@ h1 {
   margin-left: 10%;
   vertical-align: top;
   border-bottom: 4px solid;
-  border-color: #FF1493;
-  animation: borderColor 20s infinite;
+  border-color: #FF0000;
+  animation: borderColor 10s infinite;
   text-align: right;
 }
 
@@ -35,15 +51,15 @@ h3 {
   vertical-align: top;
   text-align: right;
   border-bottom: 6px solid;
-  border-color: #FF1493;
-  animation: borderColor 20s infinite;
+  border-color: #FF0000;
+  animation: borderColor 10s infinite;
   margin-left: 20px;
 }
 
 span {
-  color : #FF1493;
+  color : #FF0000;
   font-weight: 600;
-  animation: textColor 20s infinite
+  animation: textColor 10s infinite
 }
 
 a {
@@ -52,12 +68,25 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: calc(0.75em + 2vmin);
   font-weight: 600;
-  animation: borderColor 20s infinite;
+  animation: borderColor 10s infinite;
   text-decoration: none;
-  border: 4px solid #FF1493;
+  border: 4px solid #FF0000;
   padding: 4px;
   margin-left: 1vw;
   background-color: #2C2F33;
+}
+
+a:hover {
+  animation: borderColor 10s infinite, incrPadding 0.5s 1;
+}
+
+@keyframes incrPadding {
+  0% {
+    padding: 4px;
+  }
+  100% {
+    padding: 16;
+  }
 }
 
 p {
@@ -71,8 +100,8 @@ p {
 hr {
   border-top: 4px solid;
   border-bottom: 0;
-  border-color: #FF1493;
-  animation: borderColor 20s infinite;
+  border-color: #FF0000;
+  animation: borderColor 10s infinite;
 }
 
 ul {
@@ -84,15 +113,59 @@ ul {
 
 img {
   border: 4px solid;
-  border-color: #FF1493;
+  border-color: #FF0000;
   border-radius: 50%;
   display: inline-block;
   width: 12vw;
   height: 12vw;
-  margin-top: 1vw;
-  margin-left: 1vw;
-  margin-bottom: 1vw;
-  animation: borderColor 20s infinite;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 2vw;
+  animation: borderColor 10s infinite;
+}
+
+.skill-img {
+  background-color: #2C2F33;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  width: 7.5vw;
+  height: 7.5vw;
+  animation: none;
+  margin: calc(auto + 5vw);
+}
+
+.skill-img:hover{
+  background-color: inherit;
+  animation: icon-enlarge 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes icon-enlarge {
+  0% {
+    transform: scale(1,1);
+  }
+  75% {
+    transform: scale(1.3,1.3);
+  }
+  100% {
+    transform: scale(1.1,1.1);
+  }
+}
+
+.footer-padding {
+  height: 120px;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  background-color: #2C2F33;
+  bottom: 0;
+  left: 0;
+  border-top: 4px solid #FF0000;
+  animation: borderColor 10s infinite;
+  text-align: center;
 }
 
 .top-menu {
@@ -104,7 +177,7 @@ img {
 }
 
 .project-block {
-  width: calc(0.75em + 80vmin);
+  width: calc(0.75em + 60vmin);
   height: auto;
   background-color: #2C2F33;
   z-index: -1;
@@ -112,32 +185,43 @@ img {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 16px;
+  align-items: stretch;
 }
+
+.color-parent {
+  display: inline-block;
+  height: 0;
+  width: 100vw;
+  background-color: #FF0000;
+  animation: bgColor 10s infinite;
+  text-align: center;
+}
+
 
 @keyframes borderColor {
   12.5% {
     border-color: #FF0000;
   }
   25% {
-    border-color: #FFA500;
+    border-color: #FF5e00;
   }
   37.5% {
-    border-color: #FFFF00;
+    border-color: #FFa600;
   }
   50% {
-    border-color: #7FFF00;
+    border-color: #ffff00;
   }
   62.5% {
-    border-color: #00FFFF;
+    border-color: #ffff00;
   }
   75% {
-    border-color: #0000FF;
+    border-color: #ffa600;
   }
   87.5% {
-    border-color: #9932CC;
+    border-color: #ff5e00;
   }
   100% {
-    border-color: #FF1493;
+    border-color: #FF0000;
   }
 }
 
@@ -146,24 +230,51 @@ img {
     color: #FF0000;
   }
   25% {
-    color: #FFA500;
+    color: #ff5e00;
   }
   37.5% {
-    color: #FFFF00;
+    color: #ffa600;
   }
   50% {
-    color: #7FFF00;
+    color: #ffff00;
   }
   62.5% {
-    color: #00FFFF;
+    color: #ffff00;
   }
   75% {
-    color: #0000FF;
+    color: #ffa600;
   }
   87.5% {
-    color: #9932CC;
+    color: #ff5e00;
   }
   100% {
-    color: #FF1493;
+    color: #ff0000;
+  }
+}
+
+@keyframes bgColor {
+  12.5% {
+    background-color: #FF0000;
+  }
+  25% {
+    background-color: #ff5e00;
+  }
+  37.5% {
+    background-color: #ffa600;
+  }
+  50% {
+    background-color: #ffff00;
+  }
+  62.5% {
+    background-color: #ffff00;
+  }
+  75% {
+    background-color: #ffa600;
+  }
+  87.5% {
+    background-color: #ff5e00;
+  }
+  100% {
+    background-color: #ff0000;
   }
 }
