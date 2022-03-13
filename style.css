@@ -3,7 +3,7 @@
 :root {
   --orange: #FF6200;
   --dark: #23272A;
-  --light: #2C2F33
+  --light: #2C2F33;
 }
 
 body {
@@ -80,6 +80,20 @@ a:hover {
   animation: borderColor 10s infinite, incrPadding 0.5s 1;
 }
 
+.social-link {
+  display: inline;
+  color : #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 2vmin);
+  font-weight: 600;
+  animation: none;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  background-color: #2C2F33;
+}
+
 @keyframes incrPadding {
   0% {
     padding: 4px;
@@ -95,6 +109,64 @@ p {
   font-size: calc(0.75em + 2vmin);
   margin-left: 5%;
   margin-right: 5%;
+}
+
+label {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 2vmin);
+  border-bottom: 6px solid;
+  animation: borderColor 10s infinite;
+  margin-left: 1vw;
+}
+
+input[type="text"] {
+  background-color: var(--light);
+  vertical-align: middle;
+  width: 30vw;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 1.5vmin);
+  border: 6px solid var(--dark);
+  padding: 6px;
+}
+
+textarea {
+  background-color: var(--light);
+  vertical-align: middle;
+  width: 60vw;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 1.5vmin);
+  border: 6px solid var(--dark);
+  padding: 6px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: var(--light);
+  vertical-align: middle;
+  width: auto;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 1.5vmin);
+  border: 6px solid var(--dark);
+  padding: 6px;
+}
+
+input[type="reset"] {
+  background-color: var(--light);
+  vertical-align: middle;
+  width: auto;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 1.5vmin);
+  border: 6px solid var(--dark);
+  padding: 6px;
 }
 
 hr {
@@ -126,13 +198,14 @@ img {
 
 .skill-img {
   background-color: #2C2F33;
-  border: none;
+  border: 16px solid var(--dark);
   border-radius: 0;
   display: inline-block;
   width: 7.5vw;
   height: 7.5vw;
   animation: none;
   margin: calc(auto + 5vw);
+  text-decoration: none;
 }
 
 .skill-img:hover{
@@ -154,7 +227,7 @@ img {
 }
 
 .footer-padding {
-  height: 120px;
+  height: 128px;
 }
 
 .footer {
@@ -184,8 +257,53 @@ img {
   border-radius: 12px;
   display: inline-block;
   vertical-align: top;
+  margin: 0 1vw;
   margin-bottom: 16px;
-  align-items: stretch;
+}
+
+.projects {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.blogs {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  margin-top: 2vh;
+}
+
+.blog {
+  width: 90%;
+  height: auto;
+  background-color: #2C2F33;
+  z-index: -1;
+  border-radius: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 1vh 5%;
+}
+
+.date {
+  animation: none;
+  font-style: italic;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 1vmin);
+  font-weight: 50;
+  margin: 12px;
+}
+
+.social-img {
+  border: 4px solid var(--dark);
+  border-radius: 50%;
+  display: inline-block;
+  width: 4vw;
+  height: 4vw;
+  animation: borderColor 10s infinite;
+  text-decoration: none;
 }
 
 .color-parent {
@@ -199,82 +317,55 @@ img {
 
 
 @keyframes borderColor {
-  12.5% {
-    border-color: #FF0000;
+  0% {
+    border-color: #FF3200;
   }
   25% {
-    border-color: #FF5e00;
-  }
-  37.5% {
-    border-color: #FFa600;
+    border-color: #FF6400;
   }
   50% {
-    border-color: #ffff00;
-  }
-  62.5% {
-    border-color: #ffff00;
+    border-color: #FF9600;
   }
   75% {
-    border-color: #ffa600;
-  }
-  87.5% {
-    border-color: #ff5e00;
+    border-color: #FF6400;
   }
   100% {
-    border-color: #FF0000;
+    border-color: #FF3200;
   }
 }
 
 @keyframes textColor {
-  12.5% {
-    color: #FF0000;
+  0% {
+    color: #FF3200;
   }
   25% {
-    color: #ff5e00;
-  }
-  37.5% {
-    color: #ffa600;
+    color: #FF6400;
   }
   50% {
-    color: #ffff00;
-  }
-  62.5% {
-    color: #ffff00;
+    color: #FF9600;
   }
   75% {
-    color: #ffa600;
-  }
-  87.5% {
-    color: #ff5e00;
+    color: #FF6400;
   }
   100% {
-    color: #ff0000;
+    color: #FF3200;
   }
 }
 
 @keyframes bgColor {
-  12.5% {
-    background-color: #FF0000;
+  0% {
+    background-color: #FF3200;
   }
   25% {
-    background-color: #ff5e00;
-  }
-  37.5% {
-    background-color: #ffa600;
+    background-color: #FF6400;
   }
   50% {
-    background-color: #ffff00;
-  }
-  62.5% {
-    background-color: #ffff00;
+    background-color: #FF9600;
   }
   75% {
-    background-color: #ffa600;
-  }
-  87.5% {
-    background-color: #ff5e00;
+    background-color: #FF6400;
   }
   100% {
-    background-color: #ff0000;
+    background-color: #FF3200;
   }
 }
