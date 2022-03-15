@@ -54,6 +54,7 @@ h3 {
   border-color: #FF0000;
   animation: borderColor 10s infinite;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 span {
