@@ -274,7 +274,11 @@ img {
   align-items: center;
   align-content: center;
   margin-top: 2vh;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 8.5in) 1fr;
 }
+
+.blogs * { grid-column: 2/3; }
 
 .blog {
   width: 90%;
@@ -284,7 +288,7 @@ img {
   border-radius: 12px;
   display: inline-block;
   vertical-align: top;
-  margin: 1vh 5%;
+  margin: 1vh 0;
 }
 
 .date {
