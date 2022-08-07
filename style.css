@@ -133,6 +133,18 @@ input[type="text"] {
   padding: 6px;
 }
 
+input[type="password"] {
+  background-color: var(--light);
+  vertical-align: middle;
+  width: 30vw;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(0.75em + 1.5vmin);
+  border: 6px solid var(--dark);
+  padding: 6px;
+}
+
 textarea {
   background-color: var(--light);
   vertical-align: middle;
